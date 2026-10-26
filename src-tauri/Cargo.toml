@@ -1,0 +1,33 @@
+[package]
+name = "varch"
+version = "0.1.0"
+description = "Varch private search application"
+authors = ["Varch contributors"]
+edition = "2021"
+rust-version = "1.92"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dev-dependencies]
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[dependencies]
+ammonia = "4"
+flate2 = "1"
+scraper = "0.27"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+tar = "0.4"
+tauri = { version = "2", features = ["unstable"] }
+tokio = { version = "1", features = ["sync", "time"] }
+ureq = { version = "3", features = ["socks-proxy"] }
+uuid = { version = "1", features = ["v4"] }
+url = "2"
+
+[target.'cfg(not(windows))'.dependencies]
+arti-ureq = { version = "0.47", default-features = false, features = ["rustls", "tokio"] }
+
+[target.'cfg(windows)'.dependencies]
+libsqlite3-sys = { version = "0.37", features = ["bundled-windows"] }

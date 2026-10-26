@@ -1,0 +1,13 @@
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/gen/schemas/
+src-tauri/gen/android/
+.env
+.env.*
+!.env.example
+*.log
+npm-debug.log*
+roles-bot.mjs
+.DS_Store
+Thumbs.db

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 970 672" fill="none">
+  <defs>
+    <linearGradient id="violet" x1="20" y1="10" x2="380" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b052ff"/>
+      <stop offset=".48" stop-color="#782bfa"/>
+      <stop offset="1" stop-color="#4932d7"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="545" y1="0" x2="555" y2="670" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#58b9ff"/>
+      <stop offset=".5" stop-color="#3d83ff"/>
+      <stop offset="1" stop-color="#5632e9"/>
+    </linearGradient>
+    <linearGradient id="bevel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fff" stop-opacity=".56"/>
+      <stop offset=".45" stop-color="#fff" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#16112f" stop-opacity=".52"/>
+    </linearGradient>
+  </defs>
+  <g stroke-linejoin="round">
+    <path d="M8 8h205l232 411-254-81L8 8Z" fill="url(#violet)" stroke="#24104f" stroke-width="10"/>
+    <path d="M8 8h205l232 411" stroke="url(#bevel)" stroke-width="5" opacity=".8"/>
+    <path d="M158 369c79 28 181 57 304 78L335 664 158 369Z" fill="url(#violet)" stroke="#261050" stroke-width="10"/>
+    <path d="M158 369c79 28 181 57 304 78L335 664" stroke="url(#bevel)" stroke-width="5" opacity=".7"/>
+    <path d="M747 8h215L608 594c-26 46-58 70-114 70H390L747 8Z" fill="url(#blue)" stroke="#171438" stroke-width="10"/>
+    <path d="M747 8h215L608 594" stroke="url(#bevel)" stroke-width="5" opacity=".82"/>
+  </g>
+</svg>
